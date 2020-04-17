@@ -1,0 +1,173 @@
+/** Add any CSS you need to this file. */
+
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+label,
+input {
+  display: block;
+  width: 100%;
+}
+.radioCont label,
+.radioCont input {
+  width: auto;
+  float: left;
+}
+.about {
+  text-align: center;
+}
+.about img {
+  display: block;
+  margin: auto;
+}
+body {
+  height: max-content;
+
+  font-family: "Girassol", cursive;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+nav {
+  background-color: lightgray;
+}
+.top-menu {
+  list-style-type: none;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  overflow: hidden;
+  font-size: 1rem;
+  margin-bottom: 8rem;
+}
+.nav-index {
+  display: inline;
+  text-align: center;
+  padding-left: 14%;
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .top-menu {
+    padding: 0;
+  }
+  .nav-index {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.top-btn {
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  font-family: "Girassol", cursive;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .sidemenu {
+    display: none;
+  }
+}
+.sidemenu {
+  height: 100%;
+  width: 15%;
+  overflow-x: hidden;
+  float: left;
+  padding-left: 14%;
+}
+.m-sidemenu-btn {
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  text-align: left;
+  outline: none;
+  display: block;
+  padding-bottom: 0.9rem;
+}
+.sidemenu-btn,
+.btn {
+  text-decoration: none;
+  color: black;
+  border: none;
+  background: none;
+  text-align: left;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  padding-bottom: 0.9rem;
+}
+.sidemenu-top,
+.sidemenu-bottom {
+  display: none;
+  padding-left: 0.6rem;
+}
+body #container {
+  float: left;
+  width: 60%;
+  height: auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+.main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#m-menu-p {
+  float: left;
+  margin-top: -8rem;
+}
+#toggle,
+#m-menu {
+  display: none;
+}
+#toggle:checked + #m-menu {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  #m-menu-p {
+    display: none;
+  }
+}
+.main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+footer {
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  margin-top: 3rem;
+}
+footer form {
+  float: right;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  background-color: black;
+}
+#email {
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+#submit {
+  width: 10rem;
+  background-color: black;
+  color: white;
+  border: none;
+}
+footer h3 {
+  float: right;
+  color: white;
+  padding-top: 1rem;
+  padding-right: 0.7rem;
+}

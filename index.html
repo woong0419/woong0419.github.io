@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 APPAREL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="./contact.html"
+        style="
+          color: black;
+          float: right;
+          text-decoration: none;
+          padding-top: 0.4rem;
+          padding-right: 0.4rem;
+        "
+        >CONTACT US</a
+      >
+      <div class="logo_main">
+        <a class="logo" href="./index.html">
+          <img src="./images/logo.JPG" alt="LOGO" style="width: 6rem;" />
+        </a>
+      </div>
+    </header>
+    <div class="top">
+      <nav>
+        <ul class="top-menu">
+          <li class="nav-index">
+            <button class="top-btn" onclick="filterSide('SHOP')">SHOP</button>
+          </li>
+          <li class="nav-index">
+            <button class="top-btn" onclick="filterSide('MEN')">MEN</button>
+          </li>
+          <li class="nav-index">
+            <button class="top-btn" onclick="filterSide('WOMEN')">WOMEN</button>
+          </li>
+        </ul>
+      </nav>
+      <div id="m-menu-p">
+        <label for="toggle" onclick>FILTERS</label>
+        <input type="checkbox" id="toggle" />
+        <div id="m-menu">
+          <button class="m-sidemenu-btn">TOP</button>
+          <div class="m-sidemenu-top">
+            <button class="btn" onclick="filterSide('TEES')">TEES</button>
+            <button class="btn" onclick="filterSide('OUTERWEAR')">
+              OUTERWEAR
+            </button>
+          </div>
+          <button class="m-sidemenu-btn">BOTTOM</button>
+          <div class="m-sidemenu-bottom">
+            <button class="btn" onclick="filterSide('DENIM')">DENIM</button>
+            <button class="btn" onclick="filterSide('SKIRT')">SKIRT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="sidemenu">
+        <p>FILTERS</p>
+        <button class="sidemenu-btn">TOP</button>
+        <div class="sidemenu-top">
+          <button class="btn" onclick="filterSide('TEES')">TEES</button>
+          <button class="btn" onclick="filterSide('OUTERWEAR')">
+            OUTERWEAR
+          </button>
+        </div>
+        <button class="sidemenu-btn">BOTTOM</button>
+        <div class="sidemenu-bottom">
+          <button class="btn" onclick="filterSide('DENIM')">DENIM</button>
+          <button class="btn" onclick="filterSide('SKIRT')">SKIRT</button>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="1" style="display: inline-block;">
+          <img
+            src="./images/1.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">T-SHIRT(WHITE)</p>
+          <p class="item-price">$20.00</p>
+        </div>
+        <div id="2" style="display: inline-block;">
+          <img
+            src="./images/2.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">BLUE JEANS</p>
+          <p class="item-price">$80.00</p>
+        </div>
+        <div id="3" style="display: inline-block;">
+          <img
+            src="./images/3.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">WINTER OUTER</p>
+          <p class="item-price">$200.00</p>
+        </div>
+        <div id="4" style="display: inline-block;">
+          <img
+            src="./images/4.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">T-SHIRT(BLACK)</p>
+          <p class="item-price">$20.00</p>
+        </div>
+        <div id="5" style="display: inline-block;">
+          <img
+            src="./images/5.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">STRAIGHT JEANS</p>
+          <p class="item-price">$60.00</p>
+        </div>
+        <div id="6" style="display: inline-block;">
+          <img
+            src="./images/6.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">T-SHIRT</p>
+          <p class="item-price">$20.00</p>
+        </div>
+        <div id="7" style="display: inline-block;">
+          <img
+            src="./images/7.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">BLUE COAT</p>
+          <p class="item-price">$120.00</p>
+        </div>
+        <div id="8" style="display: inline-block;">
+          <img
+            src="./images/8.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">SLIM FIT JEANS</p>
+          <p class="item-price">$55.00</p>
+        </div>
+        <div id="9" style="display: inline-block;">
+          <img
+            src="./images/9.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">RED ONE-PIECE</p>
+          <p class="item-price">$60.00</p>
+        </div>
+        <div id="10" style="display: inline-block;">
+          <img
+            src="./images/10.jpg"
+            alt="1"
+            style="width: 200px; height: 300px;"
+          />
+          <p class="item-name">STRAIGHT JEANS</p>
+          <p class="item-price">$50.00</p>
+        </div>
+      </div>
+    </div>
+    <!--
+      Part 1: Main Store Page
+
+      Requirements:
+      aa
+      1. Header across the top must include your store's name, a logo,
+      and use a different background colour, web font, etc.  You must also include
+      a link to your contact.html page.  Your header should include info about
+      what the store is, what it sells, etc.  Use some images to try and draw
+      the user in.  NOTE: place all your site's images in the `src/images/` directory.
+
+      2. Below the header, a multi-column layout of items you can purchase in the
+      store.  You must have at least 10 items in your store, and at least 2
+      categories of items. For example, if you are selling clothing, you might
+      have categories for Men, Women, and Children, and each category would have
+      its own set of items.  Each item should include:
+      
+        - a picture
+        - the item's name/title
+        - a more complete description of the item
+        - a category (i.e., each item must belong to a category)
+        - a price.
+      
+      Each item should be its own "card" (i.e., some kind of box around each item
+      separating one from the next, with suitable whitespace between).
+
+      3. A sidebar (left or right, depending on your design) of the item layout
+      section, showing the different categories of items in your store.  If a
+      user clicks on one of the categories, use CSS and JavaScript to hide all
+      other items in the store (i.e., only show items for the chosen category).
+      Make sure you include a way to return to seeing all categories, and make it
+      obvious to the user that they are only seeing a partial list of items when
+      you filter by category (i.e., use CSS and HTML to change things somehow).
+
+      4. Below the items, a footer with the name of the store, any relevant links you
+      need to give users, as well as a small HTML form for entering an Email
+      address and clicking a "Subscribe" button to subscribe to the store's
+      newsletter. Use https://formspree.io/ to automatically submit the form to
+      your email address (i.e., when a user fills out their email address and
+      clicks submit, *you* should get that information sent to your email
+      address via formspree.io).  Make sure you setup your account on
+      https://formspree.io/.
+
+      5. Use two different Web Fonts for your store.  The titles should be different
+      from any regular text.  Use a free font service like https://fonts.google.com/
+      or any other that you choose.  You can also experiment with different font
+      sizes and colours to draw attention toward or away from various parts of
+      your design.
+
+      6. Pick a colour theme using a tool like https://colorhunt.co/ with at least
+      3 colours (primary, secondary, accent), and use them throughout your site
+      for backgrounds, borders, fonts. Your store page needs to look attractive
+      and marks will be given for good a good looking site.  No one will buy from
+      a store that looks like its owners aren't professional or don't care about
+      details.  Also make sure that the colour contrast in your site is suitable
+      for everyone to read.
+
+      7. Use modern CSS to help you achieve your layout.  For example, Flexbox
+      and CSS Grid can help you create professional looking layouts.  Here
+      are some guides to get you started:
+
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+       - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
+       
+      You are also welcome to use existing CSS libraries to help you with your layout,
+      but you must also include your own styles (i.e., you can't use a library
+      for everything in your design).
+
+      8. Make sure you don't use copyrighted materials from other sites.  If you use
+      icons, fonts, images, etc., make sure you are legally permitted to reuse them,
+      and include references to indicate where you got them. Some resources to consider:
+
+        - https://unsplash.com/ for images
+        - https://fontawesome.com/ for icons
+        - https://gallery.manypixels.co/ or https://undraw.co/illustrations for illustrations (SVG)
+
+      9. Make sure you reduce the download size of images you include in your
+      store.  Users don't want to download 10s or 100s of megabytes of data, especially
+      on mobile.  You can use an online tool like https://squoosh.app/ to help you
+      reduce images.  You will lose marks if your images aren't optimized for the web.
+       
+
+      10. Make sure you have no JavaScript or other errors in your Dev Tools Console.
+      Run your site, and test all aspects of it with the Console open, and fix
+      any issues you encounter.
+
+      11. Make sure your forms all work as they should, testing them yourself,
+      and also have someone else test it for you.  The easiest way to find bugs
+      in software is to let someone who didn't build it try to use it!
+      
+    -->
+    <footer>
+      <img src="./images/fulllogo.JPG" style="height: 6rem;" />
+      <form action="https://formspree.io/xgelbdbe" method="POST">
+        <input id="email" type="email" name="_replyto" placeholder="E_MAIL" />
+        <input id="submit" type="submit" value="Send" />
+      </form>
+      <h3>
+        SUBSCRIBE US!
+      </h3>
+      <p>WOONG O</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
